@@ -1,11 +1,9 @@
-import Orb from "./components/Orb";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <main className="min-h-screen bg-implicit-black">
-      <section id="hero" className="min-h-screen flex items-center justify-center px-6">
-        <Orb />
-      </section>
+      <Hero />
       <section id="problem" className="py-24 px-6">
         <p className="text-implicit-zinc-400">Problem</p>
       </section>
