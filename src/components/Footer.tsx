@@ -1,16 +1,7 @@
-import { useState } from "react";
+import { useWaitlistForm } from "../hooks/useWaitlistForm";
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    console.log("Waitlist signup:", email);
-    setSubmitted(true);
-    setEmail("");
-  };
+  const { email, setEmail, submitted, handleSubmit } = useWaitlistForm();
 
   return (
     <footer className="py-24 px-6 border-t border-implicit-zinc-700">
@@ -35,6 +26,7 @@ export default function Footer() {
               type="email"
               required
               placeholder="you@example.com"
+              aria-label="Email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="flex-1 px-4 py-3 rounded-lg bg-implicit-zinc-900 border border-implicit-zinc-700 text-white placeholder-implicit-zinc-400 focus:outline-none focus:border-implicit-blue transition-colors"
