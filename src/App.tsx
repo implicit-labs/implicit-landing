@@ -1,8 +1,10 @@
+import Orb from "./components/Orb";
+
 function App() {
   return (
     <main className="min-h-screen bg-implicit-black">
       <section id="hero" className="min-h-screen flex items-center justify-center px-6">
-        <p className="text-implicit-zinc-400">Hero</p>
+        <Orb />
       </section>
       <section id="problem" className="py-24 px-6">
         <p className="text-implicit-zinc-400">Problem</p>
