@@ -9,13 +9,13 @@ export default function Hero() {
       <Orb />
 
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight max-w-3xl">
-        Your morning briefing,{" "}
-        <span className="text-implicit-zinc-400">not your morning scroll</span>
+        I've read everything.{" "}
+        <span className="text-implicit-zinc-400">Here's what matters.</span>
       </h1>
 
       <p className="mt-6 text-lg sm:text-xl text-implicit-zinc-400 max-w-2xl">
-        Implicit reads your email, GitHub, Slack, Twitter, and calendar — scores
-        what matters — and briefs you in 90 seconds.
+        Your email, GitHub, Slack, Twitter, and calendar — scored, sorted, and
+        briefed to you in 90 seconds.
       </p>
 
       {submitted ? (

@@ -1,18 +1,18 @@
 const steps = [
   {
     number: "1",
-    title: "Connect your sources",
-    description: "Email, GitHub, Twitter, Slack, Calendar",
+    title: "I read your sources",
+    description: "Email, GitHub, Twitter, Slack, Calendar — all of them, every morning.",
   },
   {
     number: "2",
-    title: "AI scores signal vs noise",
-    description: "A personal cost function learns what matters to you",
+    title: "I learn what matters",
+    description: "Signal gets through. Noise doesn't. It gets better every day.",
   },
   {
     number: "3",
-    title: "90-second morning briefing",
-    description: "Voice + swipeable cards, one swipe per decision",
+    title: "I brief you in 90 seconds",
+    description: "Voice and cards. One swipe per decision. Then you're done.",
   },
 ];
 

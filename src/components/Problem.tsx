@@ -12,9 +12,9 @@ export default function Problem() {
         <div className="mt-16 h-px bg-gradient-to-r from-transparent via-implicit-zinc-700 to-transparent" />
 
         <p className="mt-16 text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug">
-          Implicit is your AI chief of staff.{" "}
+          I connect to your sources.{" "}
           <span className="text-implicit-zinc-400">
-            It connects to your sources, learns your priorities, and delivers a spoken briefing every morning — one swipe per decision.
+            I learn what matters to you. Every morning, I brief you — 90 seconds, nothing wasted.
           </span>
         </p>
       </div>

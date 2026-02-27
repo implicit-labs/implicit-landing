@@ -7,10 +7,10 @@ export default function Footer() {
     <footer className="py-24 px-6 border-t border-implicit-zinc-700">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Get early access
+          I'll be ready when you are.
         </h2>
         <p className="text-implicit-zinc-400 mb-10">
-          Join the waitlist. We'll let you know when it's ready.
+          Join the waitlist. You'll be the first to know.
         </p>
 
         {submitted ? (
