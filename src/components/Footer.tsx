@@ -40,22 +40,14 @@ export default function Footer() {
           </form>
         )}
 
-        <div className="mt-16 flex items-center justify-center gap-6 text-implicit-zinc-400 text-sm">
+        <div className="mt-16 flex items-center justify-center text-implicit-zinc-400 text-sm">
           <a
-            href="https://x.com/implicit"
+            href="https://x.com/_pikachur"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
+            className="hover:text-implicit-cream transition-colors"
           >
-            Twitter/X
-          </a>
-          <a
-            href="https://github.com/implicit"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
-          >
-            GitHub
+            @_pikachur
           </a>
         </div>
       </div>
