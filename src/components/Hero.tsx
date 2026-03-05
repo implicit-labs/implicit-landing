@@ -130,7 +130,7 @@ export default function Hero() {
   const preset = PRESETS[activePreset];
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-16 sm:pt-8 text-center">
       <div className="w-44 sm:w-52 mb-6">
         <SealedPack {...preset} />
       </div>
