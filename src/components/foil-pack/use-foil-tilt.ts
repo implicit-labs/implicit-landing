@@ -142,7 +142,7 @@ export function useFoilTilt(dragX?: number | null) {
       isHoveringRef.current = true;
     }
 
-    async function requestGyro() {
+    function requestGyro() {
       // iOS 13+ requires permission
       const DOE = DeviceOrientationEvent as unknown as {
         requestPermission?: () => Promise<string>;
@@ -159,9 +159,8 @@ export function useFoilTilt(dragX?: number | null) {
           } catch {
             // silently fail
           }
-          el.removeEventListener("touchstart", onFirstTouch);
         };
-        el.addEventListener("touchstart", onFirstTouch, { once: true });
+        el!.addEventListener("touchstart", onFirstTouch, { once: true });
       } else {
         // Android and non-iOS — no permission needed
         gyroGrantedRef.current = true;
