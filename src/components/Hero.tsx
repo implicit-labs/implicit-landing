@@ -190,7 +190,7 @@ export default function Hero() {
             aria-label="Email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 px-4 py-3 rounded-lg bg-implicit-zinc-900 border border-implicit-zinc-700 text-implicit-cream placeholder-implicit-zinc-400 focus:outline-none focus:border-implicit-blue transition-colors"
+            className="flex-1 px-4 py-3 rounded-lg bg-implicit-zinc-900 border border-implicit-zinc-700 text-implicit-cream placeholder-implicit-zinc-400 focus:outline-none focus:border-implicit-blue transition-colors text-base"
           />
           <button
             type="submit"
