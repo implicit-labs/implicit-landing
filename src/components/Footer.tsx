@@ -33,7 +33,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="px-6 py-3 rounded-lg bg-implicit-blue hover:bg-implicit-blue-hover text-white font-semibold transition-colors cursor-pointer whitespace-nowrap"
+              className="btn-waitlist px-6 py-3 rounded-lg bg-implicit-blue hover:bg-implicit-blue-hover text-white font-semibold cursor-pointer whitespace-nowrap"
             >
               Join the Waitlist
             </button>

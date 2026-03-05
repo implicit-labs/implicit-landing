@@ -24,3 +24,57 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ── Waitlist button pizzazz ── */
+
+.btn-waitlist {
+  position: relative;
+  overflow: hidden;
+  transition: transform 150ms ease-out, background-color 150ms ease;
+}
+
+.btn-waitlist::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.25) 45%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0.25) 55%,
+    transparent 70%
+  );
+  transform: translateX(-120%);
+  transition: none;
+  pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-waitlist:hover::after {
+    animation: shimmer 600ms ease-out forwards;
+  }
+
+  .btn-waitlist:hover {
+    box-shadow: 0 2px 16px rgba(74, 90, 66, 0.25);
+  }
+}
+
+.btn-waitlist:active {
+  transform: scale(0.97);
+}
+
+@keyframes shimmer {
+  to {
+    transform: translateX(120%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-waitlist::after {
+    animation: none;
+  }
+  .btn-waitlist:active {
+    transform: none;
+  }
+}

@@ -194,7 +194,7 @@ export default function Hero() {
           />
           <button
             type="submit"
-            className="px-6 py-3 rounded-lg bg-implicit-blue hover:bg-implicit-blue-hover text-implicit-black font-semibold transition-colors cursor-pointer whitespace-nowrap"
+            className="btn-waitlist px-6 py-3 rounded-lg bg-implicit-blue hover:bg-implicit-blue-hover text-implicit-black font-semibold cursor-pointer whitespace-nowrap"
           >
             Join the Waitlist
           </button>
